@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="A premium medical-style graduation invitation."
+  >
+
+  <meta name="theme-color" content="#f3f7f5">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Academic Case File — Graduation Invitation">
+  <meta
+    property="og:description"
+    content="Academic case completed. Final diagnosis: Graduation."
+  >
+
+  <title>Academic Case File — Graduation Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="medical-grid" aria-hidden="true"></div>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <main class="page-shell">
+
+    <!-- =========================================
+         TOP BAR
+    ========================================== -->
+    <header class="topbar">
+
+      <a
+        href="#case-file"
+        class="brand"
+        aria-label="Go to academic case file"
+      >
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <path d="M24 8V40"></path>
+            <path d="M8 24H40"></path>
+          </svg>
+        </span>
+
+        <span class="brand-copy">
+          <small>ACADEMIC MEDICAL SYSTEM</small>
+          <strong>CASE FILE</strong>
+        </span>
+      </a>
+
+
+      <div class="system-id">
+        <span>CASE</span>
+        <strong data-field="caseId">ACF-2027-005</strong>
+      </div>
+
+    </header>
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+    <section
+      class="hero"
+      id="case-file"
+      aria-labelledby="caseTitle"
+    >
+
+      <div class="hero-copy">
+
+        <span class="eyebrow">
+          ACADEMIC CASE FILE
+        </span>
+
+        <h1 id="caseTitle">
+          A long case.
+          <span>A clear result.</span>
+        </h1>
+
+        <p>
+          Years of lectures, clinical rounds,
+          examinations and training are now
+          ready for one final diagnosis.
+        </p>
+
+      </div>
+
+
+      <div class="case-card">
+
+        <div class="case-card__top">
+
+          <div>
+            <span>CASE SUBJECT</span>
+
+            <strong data-field="graduateName">
+              Mohammed Ahmed
+            </strong>
+          </div>
+
+          <div class="case-status">
+            <span>STATUS</span>
+            <strong id="headerStatus">UNDER REVIEW</strong>
+          </div>
+
+        </div>
+
+
+        <div class="case-card__identity">
+
+          <div class="case-number">
+            <span>CASE ID</span>
+            <strong data-field="caseId">ACF-2027-005</strong>
+          </div>
+
+          <div class="case-number">
+            <span>FIELD</span>
+            <strong data-field="degree">Bachelor of Medicine</strong>
+          </div>
+
+          <div class="case-number">
+            <span>INSTITUTION</span>
+            <strong data-field="university">University of Mosul</strong>
+          </div>
+
+        </div>
+
+
+        <div class="ecg-shell">
+
+          <div class="ecg-labels">
+            <span>ACADEMIC VITALS</span>
+            <span id="ecgState">STANDBY</span>
+          </div>
+
+          <svg
+            class="ecg"
+            viewBox="0 0 900 180"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path
+              class="ecg-grid-line"
+              d="M0 90H900"
+            ></path>
+
+            <path
+              id="ecgPath"
+              class="ecg-path"
+              d="
+                M0 90
+                L95 90
+                L125 90
+                L145 58
+                L165 125
+                L190 30
+                L215 145
+                L245 90
+                L330 90
+                L360 90
+                L382 64
+                L400 115
+                L425 40
+                L450 138
+                L478 90
+                L565 90
+                L595 90
+                L615 65
+                L635 116
+                L660 42
+                L684 138
+                L710 90
+                L900 90
+              "
+            ></path>
+          </svg>
+
+        </div>
+
+
+        <div class="case-console">
+
+          <div class="console-status">
+            <span
+              class="console-dot"
+              id="consoleDot"
+            ></span>
+
+            <span id="consoleMessage">
+              Academic case ready for review
+            </span>
+          </div>
+
+          <button
+            type="button"
+            class="review-button"
+            id="reviewButton"
+          >
+            <span>RUN ACADEMIC REVIEW</span>
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12H19"></path>
+              <path d="M14 7L19 12L14 17"></path>
+            </svg>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CASE HISTORY
+    ========================================== -->
+    <section class="history-section">
+
+      <div class="section-index">
+        01
+      </div>
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          CASE HISTORY
+        </span>
+
+        <h2>
+          Academic history
+          <span>under review.</span>
+        </h2>
+
+      </div>
+
+
+      <div
+        class="history-list"
+        id="historyList"
+      >
+        <!-- generated by JS -->
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         MEDICAL FINDINGS
+    ========================================== -->
+    <section class="findings-section">
+
+      <div class="findings-heading">
+
+        <span class="eyebrow">
+          CLINICAL ACADEMIC FINDINGS
+        </span>
+
+        <h2>
+          All indicators
+          <span>are positive.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="findings-grid">
+
+        <article class="finding-card">
+
+          <span>LECTURES</span>
+
+          <strong id="findingLectures">
+            VERIFIED
+          </strong>
+
+          <small>
+            Core academic coursework completed.
+          </small>
+
+        </article>
+
+
+        <article class="finding-card">
+
+          <span>CLINICAL ROUNDS</span>
+
+          <strong id="findingRounds">
+            VERIFIED
+          </strong>
+
+          <small>
+            Practical clinical requirements completed.
+          </small>
+
+        </article>
+
+
+        <article class="finding-card">
+
+          <span>EXAMINATIONS</span>
+
+          <strong id="findingExams">
+            VERIFIED
+          </strong>
+
+          <small>
+            Required academic examinations passed.
+          </small>
+
+        </article>
+
+
+        <article class="finding-card">
+
+          <span>INTERNSHIP</span>
+
+          <strong id="findingInternship">
+            VERIFIED
+          </strong>
+
+          <small>
+            Final training requirements completed.
+          </small>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         DIAGNOSIS
+    ========================================== -->
+    <section
+      class="diagnosis-section"
+      id="diagnosis"
+    >
+
+      <div class="diagnosis-meta">
+        <span>02</span>
+        <span>FINAL DIAGNOSIS</span>
+      </div>
+
+
+      <div class="diagnosis-content">
+
+        <span class="eyebrow">
+          FINAL ACADEMIC RESULT
+        </span>
+
+        <h2 id="diagnosisTitle">
+          Diagnosis
+          <span id="diagnosisResult">
+            PENDING
+          </span>
+        </h2>
+
+
+        <div
+          class="diagnosis-seal"
+          id="diagnosisSeal"
+        >
+          <span>ACADEMIC CASE</span>
+          <strong>GRADUATION</strong>
+          <small>VERIFIED RESULT</small>
+        </div>
+
+
+        <div
+          class="case-closed"
+          id="caseClosed"
+        >
+          CASE CLOSED
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         GRADUATE RECORD
+    ========================================== -->
+    <section class="graduate-section">
+
+      <div class="section-index">
+        03
+      </div>
+
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          GRADUATE RECORD
+        </span>
+
+        <h2>
+          Final academic
+          <span>identity.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="graduate-grid">
+
+        <article class="graduate-cell">
+          <span>GRADUATE</span>
+
+          <strong data-field="graduateName">
+            Mohammed Ahmed
+          </strong>
+        </article>
+
+
+        <article class="graduate-cell">
+          <span>DEGREE</span>
+
+          <strong data-field="degree">
+            Bachelor of Medicine
+          </strong>
+        </article>
+
+
+        <article class="graduate-cell">
+          <span>FACULTY</span>
+
+          <strong data-field="faculty">
+            College of Medicine
+          </strong>
+        </article>
+
+
+        <article class="graduate-cell">
+          <span>UNIVERSITY</span>
+
+          <strong data-field="university">
+            University of Mosul
+          </strong>
+        </article>
+
+
+        <article class="graduate-cell">
+          <span>CLASS</span>
+
+          <strong data-field="classYear">
+            Class of 2027
+          </strong>
+        </article>
+
+
+        <article class="graduate-cell">
+          <span>CASE STATUS</span>
+
+          <strong class="success-text">
+            CASE CLOSED
+          </strong>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CEREMONY
+    ========================================== -->
+    <section class="ceremony-section">
+
+      <div class="ceremony-heading">
+
+        <span class="eyebrow">
+          DISCHARGE INSTRUCTIONS
+        </span>
+
+        <h2>
+          Proceed to
+          <span>the celebration.</span>
+        </h2>
+
+        <p data-field="tagline">
+          Academic case completed.
+          The celebration begins next.
+        </p>
+
+      </div>
+
+
+      <div class="ceremony-layout">
+
+        <article class="ceremony-date">
+
+          <span
+            id="ceremonyMonth"
+            class="date-month"
+          >
+            JUL
+          </span>
+
+          <strong
+            id="ceremonyDay"
+            class="date-day"
+          >
+            15
+          </strong>
+
+          <span
+            id="ceremonyYear"
+            class="date-year"
+          >
+            2027
+          </span>
+
+        </article>
+
+
+        <div class="ceremony-details">
+
+          <div class="ceremony-row">
+            <span>DATE</span>
+
+            <strong id="formattedDate">
+              Thursday, July 15, 2027
+            </strong>
+          </div>
+
+
+          <div class="ceremony-row">
+            <span>TIME</span>
+
+            <strong id="formattedTime">
+              6:00 PM
+            </strong>
+          </div>
+
+
+          <div class="ceremony-row">
+            <span>VENUE</span>
+
+            <strong data-field="venue">
+              Grand Celebration Hall
+            </strong>
+          </div>
+
+
+          <div class="ceremony-row">
+            <span>LOCATION</span>
+
+            <strong id="fullAddress">
+              Mosul, Nineveh, Iraq
+            </strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         VITALS COUNTDOWN
+    ========================================== -->
+    <section class="vitals-section">
+
+      <div class="vitals-heading">
+
+        <span class="eyebrow">
+          GRADUATION VITALS
+        </span>
+
+        <h2>
+          Ceremony
+          <span>approaching.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="vitals-grid">
+
+        <article class="vital-card">
+          <span>DAYS</span>
+
+          <strong id="days">
+            00
+          </strong>
+        </article>
+
+
+        <article class="vital-card">
+          <span>HOURS</span>
+
+          <strong id="hours">
+            00
+          </strong>
+        </article>
+
+
+        <article class="vital-card">
+          <span>MINUTES</span>
+
+          <strong id="minutes">
+            00
+          </strong>
+        </article>
+
+
+        <article class="vital-card">
+          <span>SECONDS</span>
+
+          <strong id="seconds">
+            00
+          </strong>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         ACTIONS
+    ========================================== -->
+    <section class="actions-section">
+
+      <div class="section-index">
+        04
+      </div>
+
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          CASE ACTIONS
+        </span>
+
+        <h2>
+          Final
+          <span>instructions.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="actions-grid">
+
+        <a
+          href="#"
+          id="mapsButton"
+          class="action-card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <span class="action-index">
+            01
+          </span>
+
+          <div>
+            <small>
+              DESTINATION
+            </small>
+
+            <strong>
+              VIEW CELEBRATION LOCATION
+            </strong>
+          </div>
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M5 19L19 5"></path>
+            <path d="M9 5H19V15"></path>
+          </svg>
+
+        </a>
+
+
+        <button
+          type="button"
+          id="calendarButton"
+          class="action-card"
+        >
+
+          <span class="action-index">
+            02
+          </span>
+
+          <div>
+            <small>
+              CALENDAR
+            </small>
+
+            <strong>
+              ADD CEREMONY TO CALENDAR
+            </strong>
+          </div>
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <rect
+              x="4"
+              y="5"
+              width="16"
+              height="15"
+              rx="2"
+            ></rect>
+
+            <path d="M8 3V7"></path>
+            <path d="M16 3V7"></path>
+            <path d="M4 10H20"></path>
+          </svg>
+
+        </button>
+
+
+        <button
+          type="button"
+          id="shareButton"
+          class="action-card"
+        >
+
+          <span class="action-index">
+            03
+          </span>
+
+          <div>
+            <small>
+              CASE RESULT
+            </small>
+
+            <strong>
+              SHARE GRADUATION RESULT
+            </strong>
+          </div>
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle cx="18" cy="5" r="2.5"></circle>
+            <circle cx="6" cy="12" r="2.5"></circle>
+            <circle cx="18" cy="19" r="2.5"></circle>
+
+            <path d="M8.2 10.8L15.8 6.2"></path>
+            <path d="M8.2 13.2L15.8 17.8"></path>
+          </svg>
+
+        </button>
+
+      </div>
+
+
+      <div
+        class="share-feedback"
+        id="shareFeedback"
+        aria-live="polite"
+      ></div>
+
+    </section>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="closing">
+
+      <span class="eyebrow">
+        FINAL CASE STATUS
+      </span>
+
+      <h2>
+        Case closed.
+        <span>Graduate confirmed.</span>
+      </h2>
+
+      <p>
+        <strong data-field="graduateName">
+          Mohammed Ahmed
+        </strong>
+
+        <span>—</span>
+
+        <span data-field="classYear">
+          Class of 2027
+        </span>
+      </p>
+
+      <small>
+        ACADEMIC CASE FILE / MEDICAL GRADUATION SYSTEM
+      </small>
+
+    </footer>
+
+  </main>
+
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    defer
+  ></script>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
